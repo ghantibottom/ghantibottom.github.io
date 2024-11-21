@@ -3,146 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English Academy - Learn Smarter, Speak Better</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        /* Header Styles */
-        header {
-            background-color: #0056B3;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 2.8em;
-            margin: 0;
-        }
-        header p {
-            margin: 10px 0;
-            font-size: 1.2em;
-        }
-        .cta {
-            background-color: #FFC107;
-            padding: 15px 30px;
-            color: #000;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-        .cta:hover {
-            background-color: #FFA000;
-        }
-
-        /* Hero Section Styles */
-        .hero {
-            background: linear-gradient(to bottom, #E3F2FD, #FFFFFF);
-            padding: 50px 20px;
-            text-align: center;
-        }
-        .hero h2 {
-            font-size: 2.5em;
-            color: #004085;
-        }
-        .hero p {
-            font-size: 1.2em;
-            color: #555;
-            max-width: 700px;
-            margin: 20px auto;
-        }
-
-        /* Features Section Styles */
-        .features {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            padding: 20px;
-            background-color: #F5F5F5;
-        }
-        .feature {
-            text-align: center;
-            width: 30%;
-            margin: 10px;
-            padding: 20px;
-            background: #FFF;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            transition: transform 0.3s;
-        }
-        .feature:hover {
-            transform: translateY(-5px);
-        }
-        .feature h3 {
-            color: #0056B3;
-            font-size: 1.6em;
-        }
-        .feature p {
-            color: #555;
-        }
-
-        /* Footer Styles */
-        footer {
-            background-color: #0056B3;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-        }
-        footer p {
-            margin: 0;
-            font-size: 0.9em;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .features {
-                flex-direction: column;
-                align-items: center;
-            }
-            .feature {
-                width: 80%;
-            }
-        }
-    </style>
+    <title>Quixa.ai - Personalized AI Learning</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Learn English with Confidence</h1>
-        <p>Personalized, AI-Driven English Learning for Everyone</p>
-        <a href="#start" class="cta">Start Your Free Trial</a>
+    <header class="hero-section">
+        <nav class="navbar">
+            <img src="images/logo.jpg" alt="Quixa.ai Logo" class="logo">
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <img src="images/hero.webp" alt="Personalized Learning AI Illustration" class="hero-image">
+            <div class="hero-text">
+                <h1>Accelerate Your Learning with AI</h1>
+                <p>Discover personalized, mastery-driven learning experiences tailored to your needs. Start your journey to English fluency and creative expression today!</p>
+                <a href="#get-started" class="cta-button">Get Started</a>
+            </div>
+        </div>
     </header>
 
-    <section class="hero">
-        <h2>Why Choose Us?</h2>
-        <p>Our innovative platform adapts to your unique learning needs, helping you master reading, writing, and speaking with precision and confidence.</p>
+    <section id="features" class="features-section">
+        <h2>Why Choose Quixa.ai?</h2>
+        <div class="features-container">
+            <div class="feature">
+                <h3>Adaptive Learning</h3>
+                <p>Personalized pathways tailored to your unique strengths and weaknesses.</p>
+            </div>
+            <div class="feature">
+                <h3>Always-On AI Mentor</h3>
+                <p>Learn at your own pace with 24/7 guidance and support.</p>
+            </div>
+            <div class="feature">
+                <h3>Creative Collaboration</h3>
+                <p>Enhance your skills in reading, writing, and speaking through engaging projects.</p>
+            </div>
+            <div class="feature">
+                <h3>Mastery Through Practice</h3>
+                <p>Practice makes perfect with immediate feedback and spaced repetition.</p>
+            </div>
+        </div>
     </section>
 
-    <section class="features">
-        <div class="feature">
-            <h3>Tailored Lessons</h3>
-            <p>Personalized exercises that match your goals and pace.</p>
-        </div>
-        <div class="feature">
-            <h3>Interactive Practice</h3>
-            <p>Engaging lessons with instant feedback and corrections.</p>
-        </div>
-        <div class="feature">
-            <h3>Progress Insights</h3>
-            <p>Track your journey and achieve milestones effortlessly.</p>
-        </div>
+    <section id="how-it-works" class="how-it-works-section">
+        <h2>How It Works</h2>
+        <ol class="steps">
+            <li>Take a diagnostic test to identify your starting point.</li>
+            <li>Follow a personalized roadmap to achieve your goals.</li>
+            <li>Engage in immersive practice and creative collaboration.</li>
+            <li>Receive continuous feedback and adjust as you progress.</li>
+        </ol>
     </section>
 
-    <footer>
-        <p>&copy; 2024 English Academy. All Rights Reserved.</p>
+    <footer id="contact" class="footer">
+        <p>&copy; 2024 Quixa.ai. All rights reserved.</p>
     </footer>
 </body>
 </html>
